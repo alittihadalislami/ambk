@@ -26,45 +26,88 @@
         ]
     ?>
     <div class="container">
-        <div class="col-md-8">
-    <div class="row mb-5 text-center">
-        <div class="col-md-12 mx-auto">
-            <img src="basmalah.png" width="200px">
+    <div class="col-md-8 mx-auto">
+        <div class="row mb-5 text-center">
+            <div class="col-md-12 mx-auto mt-5">
+                <img src="basmalah.png" width="200px">
+            </div>
+            <div class="mt-5 col-lg-12 mx-auto">
+                <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2> 
+                <h3>MA AL ITTIHAD AL ISLAMI</h3>
+                <h5 class="h6"><i>Tahun Pelajaran 2022-2023</i></h5>
+            </div>
         </div>
-        <div class="mt-5 col-md-12 mx-auto">
-            <h2>Asesmen Madrasah </h2> 
-            <h3>MA Al Ittihad Al Islami</h3>
-            <h5>Tahun Pelajaran 2022-2023</h5>
-        </div>
-    </div>
         <table class="table table-striped">
             <thead>
                 <tr>
+                    <th scope="col">No</th>
                     <th scope="col">Waktu</th>
                     <th scope="col">Mata Pelajaran</th>
-                    <th scope="col">link</th>
+                    <th scope="col">Link Ujian</th>
                 </tr>
             </thead>
+            <?php  
+            
+            ?>
             <tbody>
-                <?php foreach ($jadwal as $jd) : ?>
-                <tr>
-                    <th scope="row"><?=$jd[0]?></th>
-                    <td><?=$jd[2]?></td>
+                <?php $no=1; foreach ($jadwal as $jd) : ?>
+                <tr class="fw-bold">
+                    <td><?=$no++?></td>
+                    <td scope="row">
+                    <?php 
+                        $saat_ini  = date("d-m-Y",time());
+                        // echo '<br>';
+                        // echo $jd[0];
+                        $x = explode(" ", $jd[0]);
+                        echo 'Hari: '.$x[0].'<br>';
+                        echo 'Tanggal: '.$x[1].' '.$x[2].' '.$x[3].'<br>';
+                        echo 'Jam: '.$x[4];
+                        $jam_start = explode("-",$x[4])[0];
+                        // echo '<br>';
+                        $jam_end = explode("-",$x[4])[1];
+                        $jadwal_hari = $x[1]."-03-2023";
+                        // echo "<hr>";
+                        // echo "sekarang: " . var_dump(time());
+                        // echo "<hr>";
+                        $jadwal_jam_start = $x[1]."-03-2023 ".$jam_start;
+                        // echo " | ";
+                        $jadwal_jam_end = $x[1]."-03-2023 ".$jam_end;
+                        // echo "<br>";
+                        // var_dump( time() > strtotime($jadwal_jam_start) );
+                        $cek_mulai = time() > strtotime($jadwal_jam_start);
+                        // echo " | ";
+                        // var_dump( time() < strtotime($jadwal_jam_end));
+                        $cek_selesai = time() < strtotime($jadwal_jam_end);
+                    ?>
+                    </td>
+                    <th><?=$jd[2]?></th>
                     <?php  
-                    $cek = false;
+                    $cek = $jadwal_hari == $saat_ini;
                     if ($cek) {
                         $link = $jd[1];
                     }else{
                         $link = "#";
                     }
                     ?>
-                    <td><a href="<?=$link?>">Mulai ujian</a></td>
+                    <td>
+                        <?php if ($cek_selesai): ?>
+                            <?php if ($cek_mulai): ?>
+                                <a href="<?=$jd[1]?>">Mulai ujian</a>
+                                <?php else: ?>
+                                <p>Belum waktunya</p>
+                            <?php endif ?>
+                        <?php else: ?>
+                            <p>Selesai</p>
+                        <?php endif ?>
+                    </td>
                 </tr>
                 <?php endforeach ?>
             </tbody>
         </table>
-        <div class="mt-5 mb-5 col-md-12 mx-auto">
-            <h5 class="text-center">Panitia Ujian 2023</h5>
+        <div class="text-right mt-5 mb-5">
+            <span>
+                <i>Panitia Ujian MII</i> &copy; <?= date('Y'); ?>
+            </span>
         </div>
     </div>
     </div>
