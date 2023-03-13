@@ -48,7 +48,7 @@
             <tbody>
                 <?php foreach ($jadwal as $jd) : ?>
                 <tr>
-                    <th scope="row"><?=$jd[0]?> <p>p</p></th>
+                    <th scope="row"><?=$jd[0]?></th>
                     <td><?=$jd[2]?></td>
                     <?php  
                     $cek = false;
