@@ -27,7 +27,7 @@
     ?>
     <div class="container">
     <div class="col-md-8 mx-auto">
-        <div class="row mb-5 text-center">
+        <div class="row mb-2 text-center">
             <div class="col-md-12 mx-auto mt-5">
                 <img src="basmalah.png" width="130px">
             </div>
@@ -37,7 +37,14 @@
             <div class="mt-3 col-lg-12 mx-auto">
                 <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2> 
                 <h3>MA AL ITTIHAD AL ISLAMI</h3>
-                <h5 class="h6"><i>Tahun Pelajaran 2022-2023</i></h5>
+                <h5 class="h6 mb-2"><i>Tahun Pelajaran 2022-2023</i></h5>
+                <?php 
+                // echo "zona waktu dari server: " . date('Y-m-d G:i:s') . " <br>";
+                $tz = 'Asia/Jakarta';
+                $dt = new DateTime("now", new DateTimeZone($tz));
+                $timestamp = $dt->format('d/m/Y G:i:s');
+                echo "<div class='fs-6 mt-4'>Saat ini: $timestamp, silahkan refresh (tekan F5)</div>".'<br>';
+                ?>
             </div>
         </div>
         <table class="table table-striped">
