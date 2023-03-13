@@ -29,9 +29,12 @@
     <div class="col-md-8 mx-auto">
         <div class="row mb-5 text-center">
             <div class="col-md-12 mx-auto mt-5">
-                <img src="basmalah.png" width="200px">
+                <img src="basmalah.png" width="130px">
             </div>
-            <div class="mt-5 col-lg-12 mx-auto">
+            <div class="col-md-12 mx-auto mt-3">
+                <img src="logo_mii.svg" width="120px">
+            </div>
+            <div class="mt-3 col-lg-12 mx-auto">
                 <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2> 
                 <h3>MA AL ITTIHAD AL ISLAMI</h3>
                 <h5 class="h6"><i>Tahun Pelajaran 2022-2023</i></h5>
@@ -51,7 +54,7 @@
             ?>
             <tbody>
                 <?php $no=1; foreach ($jadwal as $jd) : ?>
-                <tr class="fw-bold">
+                <tr class="fw-bold align-middle">
                     <td><?=$no++?></td>
                     <td scope="row">
                     <?php 
