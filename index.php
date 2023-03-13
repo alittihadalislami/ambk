@@ -62,11 +62,12 @@
             <tbody>
                 <?php $no=1; foreach ($jadwal as $jd) : ?>
                 <tr class="fw-bold align-middle">
-                    <td><?=$no++?></td>
-                    <td scope="row">
+                    <td class="fw-normal"><?=$no++?></td>
+                    <td scope="row" class="fw-normal">
                     <?php 
-                        $saat_ini  = date("d-m-Y",time());
+                        date_default_timezone_set("Asia/Jakarta");
                         // echo '<br>';
+                        $saat_ini  = date("d-m-Y",time());
                         // echo $jd[0];
                         $x = explode(" ", $jd[0]);
                         echo 'Hari: '.$x[0].'<br>';
@@ -91,23 +92,15 @@
                     ?>
                     </td>
                     <th><?=$jd[2]?></th>
-                    <?php  
-                    $cek = $jadwal_hari == $saat_ini;
-                    if ($cek) {
-                        $link = $jd[1];
-                    }else{
-                        $link = "#";
-                    }
-                    ?>
                     <td>
                         <?php if ($cek_selesai): ?>
                             <?php if ($cek_mulai): ?>
-                                <a href="<?=$jd[1]?>">Mulai ujian</a>
-                                <?php else: ?>
-                                <p>Belum waktunya</p>
+                                <a href="<?=$jd[1]?>">Bismillah, mulai ujian</a>
+                            <?php else: ?>
+                                <p class="fw-light">Belum waktunya</p>
                             <?php endif ?>
                         <?php else: ?>
-                            <p>Selesai</p>
+                            <p class="fw-light">Selesai</p>
                         <?php endif ?>
                     </td>
                 </tr>
