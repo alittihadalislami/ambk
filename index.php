@@ -10,20 +10,20 @@
   <body >
     <?php 
         $jadwal = [
-            ["Senin, 13 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkski", "SKI"],
-            ["Senin, 13 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkindonesia", "Bahasa Indonesia"],
-            ["Selasa, 14 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkaqidah", "Aqidah Ahlak"],
-            ["Selasa, 14 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkhadis", "Ilmu Hadist"],
-            ["Rabu, 15 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkarabw", "Bahasa Arab W"],
-            ["Rabu, 15 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkpkn", "PKn"],
-            ["Kamis, 16 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkmtk", "Matematika W"],
-            ["Kamis, 16 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambksejarahw", "Sejarah W"],
-            ["Sabtu, 18 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkqurdis", "Qurdis"],
-            ["Sabtu, 18 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkilmutafsir", "Ilmu Tafsir"],
-            ["Ahad, 19 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkfikih", "Fikih"],
-            ["Ahad, 19 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkinggris", "Bahasa Inggris"],
-            ["Senin, 20 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkarabp", "Bahasa Arab P"],
-            ["Senin, 20 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkusul", "Usul Fikih"]
+            ["Senin, 26 Februari 2023. 07.30-09.00", "https://tinyurl.com/ambkski", "SKI"],
+            ["Senin, 26 Februari 2023. 09.30-11.00", "https://tinyurl.com/ambkindonesia", "Bahasa Indonesia"],
+            ["Selasa, 27 Februari 2023. 07.30-09.00", "https://tinyurl.com/ambkaqidah", "Aqidah Ahlak"],
+            ["Selasa, 27 Februari 2023. 09.30-11.00", "https://tinyurl.com/ambkhadis", "Ilmu Hadist"],
+            ["Rabu, 28 Februari 2023. 07.30-09.00", "https://tinyurl.com/ambkarabw", "Bahasa Arab W"],
+            ["Rabu, 28 Februari 2023. 09.30-11.00", "https://tinyurl.com/ambkpkn", "PKn"],
+            ["Kamis, 29 Februari 2023. 07.30-09.00", "https://tinyurl.com/ambkmtk", "Matematika W"],
+            ["Kamis, 29 Februari 2023. 09.30-11.00", "https://tinyurl.com/ambksejarahw", "Sejarah W"],
+            ["Sabtu, 02 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkqurdis", "Qurdis"],
+            ["Sabtu, 02 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkilmutafsir", "Ilmu Tafsir"],
+            ["Ahad, 03 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkfikih", "Fikih"],
+            ["Ahad, 03 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkinggris", "Bahasa Inggris"],
+            ["Senin, 04 Maret 2023. 07.30-09.00", "https://tinyurl.com/ambkarabp", "Bahasa Arab P"],
+            ["Senin, 04 Maret 2023. 09.30-11.00", "https://tinyurl.com/ambkusul", "Usul Fikih"]
         ]
     ?>
     <div class="container">
@@ -32,19 +32,24 @@
             <div class="col-md-12 mx-auto mt-5">
                 <img src="basmalah.png" width="130px">
             </div>
-            <div class="col-md-12 mx-auto mt-3">
-                <img src="logo_mii.svg" width="120px">
+            <div class="col-md-12 mx-auto mt-3 flex">
+                <div class="ml-2">
+                    <img src="logo_mii.svg" width="120px">
+                </div>
+                <div class="mt-4">
+                    <img src="logo_am_2024.png" width="520px">
+                </div>
             </div>
-            <div class="mt-3 col-lg-12 mx-auto">
-                <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2> 
+            <div class="mt-4 col-lg-12 mx-auto">
+                <!-- <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2>  -->
                 <h3>MA AL ITTIHAD AL ISLAMI</h3>
-                <h5 class="h6 mb-2"><i>Tahun Pelajaran 2022-2023</i></h5>
+                <!-- <h5 class="h6 mb-2"><i>Tahun Pelajaran 2023-2024</i></h5> -->
                 <?php 
                 // echo "zona waktu dari server: " . date('Y-m-d G:i:s') . " <br>";
                 $tz = 'Asia/Jakarta';
                 $dt = new DateTime("now", new DateTimeZone($tz));
                 $timestamp = $dt->format('d/m/Y G:i:s');
-                echo "<div class='fs-6 mt-4'>Saat ini: $timestamp, silahkan refresh (tekan F5)</div>".'<br>';
+                echo "<div class='fs-6 mt-3'>Saat ini: $timestamp, silahkan refresh (tekan F5)</div>".'<br>';
                 ?>
             </div>
         </div>
