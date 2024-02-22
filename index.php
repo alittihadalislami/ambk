@@ -6,8 +6,14 @@
     <meta http-equiv="refresh" content="30">
     <title>AMBK - MA Al Ittihad Al Islami</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-  <body >
+    <style>
+        body{
+            background-color: #0a290a;
+            background-image: linear-gradient(349deg, #0a290a 0%, #6bbeb2 50%, #dfd4a8 100%);
+        }
+    </style>
+</head>
+  <body>
     <?php 
         $jadwal = [
             ["Senin, 26 Februari 2023. 07.30-09.00", "https://tinyurl.com/ambkski", "SKI"],
@@ -33,16 +39,18 @@
                 <img src="basmalah.png" width="130px">
             </div>
             <div class="col-md-12 mx-auto mt-3 flex">
-                <div class="ml-2">
-                    <img src="logo_mii.svg" width="120px">
+                <div class="ml-2 mb-1">
+                    <!-- <img src="logo_mii.svg" width="120px"> -->
+                    <img src="logo_MA.png" width="300px">
                 </div>
-                <div class="mt-4">
-                    <img src="logo_am_2024.png" width="520px">
+                <div class="mt-5">
+                    <img src="logo_am_2024.png" width="700px">
                 </div>
             </div>
             <div class="mt-4 col-lg-12 mx-auto">
+                <a href="http://tinyurl.com/cobaam24" class="btn btn-danger" role="button" aria-disabled="true">COBAAM</a>
                 <!-- <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2>  -->
-                <h3>MA AL ITTIHAD AL ISLAMI</h3>
+                <!-- <h3>MA AL ITTIHAD AL ISLAMI</h3> -->
                 <!-- <h5 class="h6 mb-2"><i>Tahun Pelajaran 2023-2024</i></h5> -->
                 <?php 
                 // echo "zona waktu dari server: " . date('Y-m-d G:i:s') . " <br>";
@@ -53,7 +61,7 @@
                 ?>
             </div>
         </div>
-        <table class="table table-striped">
+        <table class="table table-success table-hover">
             <thead>
                 <tr>
                     <th scope="col">No</th>
@@ -114,7 +122,7 @@
             </tbody>
         </table>
         <div class="text-right mt-5 mb-5">
-            <span>
+            <span class="text-light fw-bold">
                 <i>Panitia Ujian MII</i> &copy; <?= date('Y'); ?>
             </span>
         </div>
