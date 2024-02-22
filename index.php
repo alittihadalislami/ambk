@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="mt-4 col-lg-12 mx-auto">
-                <a href="http://tinyurl.com/cobaam24" class="btn btn-danger" role="button" aria-disabled="true">COBAAM</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfykt4pgOMHLjmtXOBb2FPDakpvVX48rKFaF8Za7NfPmibUXw/viewform" class="btn btn-danger" role="button" aria-disabled="true">COBAAM</a>
                 <!-- <h2>Asesmen Madrasah Berbasis Komputer (AMBK)</h2>  -->
                 <!-- <h3>MA AL ITTIHAD AL ISLAMI</h3> -->
                 <!-- <h5 class="h6 mb-2"><i>Tahun Pelajaran 2023-2024</i></h5> -->
