@@ -48,7 +48,7 @@
         // ]
     ?>
     <div class="container">
-    <div class="col-md-8 mx-auto">
+    <div class="col-md-10 mx-auto">
         <div class="row mb-2 text-center">
             <div class="col-md-12 mx-auto mt-5">
                 <img src="basmalah.png" width="130px">
@@ -120,7 +120,7 @@
                     <td>
                         <?php if ($cek_selesai): ?>
                             <?php if ($cek_mulai): ?>
-                                <a class="text-danger text-decoration-none" href="<?=$jd->link?>">
+                                <a class="text-success text-decoration-none" href="<?=$jd->link?>">
                                     Bismillah, mulai ujian
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
