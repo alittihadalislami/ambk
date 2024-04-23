@@ -24,10 +24,10 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div class="input-group">
-                    <input type="text" maxlength="16" id="nik" class="form-control is-invalid" placeholder="Masukkan nomor NIK yang terdaftar pada SIM-Ma'had" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" maxlength="16" id="nik" class="fw-bold form-control form-control-lg is-invalid" placeholder="Masukkan nomor NIK yang terdaftar pada SIM-Ma'had" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2"><a class="text-decoration-none text-dark fw-bold" href="#">N I K</a></span>
                 </div>
-                <span id="ket_nik" class="fw-lighter ml-5">Silahkan masukkan nik, 16 angka</span>
+                <span id="ket_nik" class="fw-light ml-5">Silahkan masukkan nik, 16 angka</span>
 
                 <table id="tabel" class="table table-striped mt-5 d-none">
                     <tbody>
@@ -68,7 +68,7 @@
                                 <br>
                                 <span class="fw-bold">Praktik 1:</span> Silahkan screeshot halaman ini dan simpan dengan format ".JPG", untuk diupload pada form praktik 2, pada hasil screeshot nama madrasah sampai dengan detail tugas praktik harus terlihat dan dapat dibaca.
                                 <br>
-                                <span class="fw-bold">Praktik 2:</span> Klik <a class="text-success fw-bold text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">link berikut</a>, dan isi form dengan data valid dari KK dan Ijazah terakhir, melalui akun email masing-masing peserta
+                                <span class="fw-bold">Praktik 2:</span> Klik <a class="text-success fw-bold text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">link berikut</a>, dan isi form dengan data valid dari KK dan Ijazah terakhir, melalui akun Gmail masing-masing peserta
                                 <br>
                                 <span class="fw-bold">Praktik 3:</span> Berikan/tuliskan komentar terhadap 1 postingan dari salah satu media sosial Ma'had Al-Ittihad Al Islami dengan <a href="https://youtu.be/7wJOsGEaz0Y">prinsip INSAN "Internet Sehat dan Aman"</a> dan di akhir komentar <span class="fw-bold">wajib</span> diberikan 2 hashtags <span class="fw-bold">#praktikPrakarya2024 dan <span id="t_token">#12A00007</span></span> (sesuai token masing-masing)
                                 <br> medsos pilihan untuk anda:
@@ -76,7 +76,7 @@
                                     <img src='fb.svg' width='20px'><a class=' text-secondary fw-bold text-decoration-none' target='_blank' href='https://web.facebook.com/mahadalittihadalislami/'> facebook</a>
                                 </span>
                                 <hr>
-                                <span class="fw-bold">Penting!!</span> Soal dan token berbeda dengan peserta lain, harap sesuai dengan intruksi dan link yang ada.
+                                <span class="fw-bold">Penting!!</span> Pilihan medsos dan token berbeda dengan peserta lain, harus mengikuti dengan intruksi dan link yang ada.
                             </td>
                         </tr>
                     </tbody>
