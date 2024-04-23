@@ -66,7 +66,7 @@
                             <td>
                                 <span id="nama" class="fs-4  fw-bold">Mustofa</span>, tugas praktik untuk anda adalah:
                                 <br>
-                                <span class="fw-bold">Praktik 1:</span> Silahkan screeshot halaman ini dan simpan dengan format ".JPG", untuk diupload pada form praktik 2, pada hasil screeshot nama madrasah sampai dengan detail tugas praktik harus terlihat dan dapat dibaca.
+                                <span class="fw-bold">Praktik 1:</span> Silahkan screenshot halaman ini dan simpan dengan format ".JPG", untuk diupload pada form praktik 2, pada hasil screeshot nama madrasah sampai dengan detail tugas praktik harus terlihat dan dapat dibaca.
                                 <br>
                                 <span class="fw-bold">Praktik 2:</span> Klik <a class="text-success fw-bold text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">link berikut</a>, dan isi form dengan data valid dari KK dan Ijazah terakhir, melalui akun Gmail masing-masing peserta
                                 <br>
