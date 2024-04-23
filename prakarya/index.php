@@ -6,7 +6,7 @@
     <title>PRAKTIK PRAKARYA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="https://icon.horse/icon/alittihadalislami.org" type="image/x-icon">
     <style>
         body {
             background: rgb(99,224,196);
@@ -20,15 +20,16 @@
         <div class="row">
             <h1 class="mt-4 text-center"> Ujian Praktik TIK-PRAKARYA</h1>
         </div>
-        
+
         <div class="row mt-4">
             <div class="col-12">
                 <div class="input-group">
                     <input type="text" maxlength="16" id="nik" class="form-control is-invalid" placeholder="Masukkan nomor NIK yang terdaftar pada SIM-Ma'had" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2"><a href="#">N I K</a></span>
+                    <span class="input-group-text" id="basic-addon2"><a class="text-decoration-none text-dark fw-bold" href="#">N I K</a></span>
                 </div>
-                <span class="fw-lighter ml-5">jika NIK sudah benar tapi tetap tidak ditemukan, silahkan menghubungi TU</span>
-                <table class="table table-striped mt-5">
+                <span id="ket_nik" class="fw-lighter ml-5">Silahkan masukkan nik, 16 angka</span>
+
+                <table id="tabel" class="table table-striped mt-5 d-none">
                     <tbody>
                         <tr>
                             <td class="col-3">Madrasah</td>
@@ -36,37 +37,46 @@
                         </tr>
                         <tr>
                             <td>Tahun</td>
-                            <td>2024</td>
+                            <td class="fw-bold fs-5"><?php echo date("Y"); ?></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Mata Pelajaran</td>
-                            <td>TIK - Prakarya</td>
-                        </tr>
+                            <td class="fw-bold fs-5">TIK - Prakarya</td>
+                        </tr> -->
                         <tr>
                             <td>Hari, Tanggal dan Jam</td>
-                            <td>Senin, 20-12-2024</td>
+                            <?php
+                                setlocale(LC_TIME, 'id_ID'); // Mengatur lokalisasi ke bahasa Indonesia
+                                $time = time(); // Mendapatkan waktu saat ini dalam bentuk timestamp
+                                // Mengubah format waktu menggunakan fungsi date() dan strtotime()
+                                $formattedTime = strftime("%d %B %Y %H:%M:%S", $time);
+                            ?>
+                            <td class="fw-bold fs-5"><?=$formattedTime?></td>
                         </tr>
                         <tr>
                             <td>Token</td>
-                            <td>20241220.45456</td>
+                            <td class="fw-bold fs-5" id="token">xxxx</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Nama</td>
-                            <td>Ahmad Mustofa</td>
-                        </tr>
+                            <td class="fw-bold fs-5">Ahmad Mustofa</td>
+                        </tr> -->
                         <tr>
                             <td>Soal Praktik</td>
                             <td>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                                </svg>
-                                <span class="fw-bold">Praktik 1:</span> Silahkan screeshot halaman ini dan simpan dengan format ".JPG", untuk upload di google drive nanti.
+                                <span id="nama" class="fs-4  fw-bold">Mustofa</span>, tugas praktik untuk anda adalah:
                                 <br>
-                                <span class="fw-bold">Praktik 2:</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">Isi form pada link berikut, dengan akun email masing-masing</a>
+                                <span class="fw-bold">Praktik 1:</span> Silahkan screeshot halaman ini dan simpan dengan format ".JPG", untuk diupload pada form praktik 2, pada hasil screeshot nama madrasah sampai dengan detail tugas praktik harus terlihat dan dapat dibaca.
                                 <br>
-                                <span class="fw-bold">Praktik 3:</span> Berikan/tuliskan komentar yang baik dan usul yang membangun, terhadap 1 postingan dari media sosial Ma'had Al-Ittihad Al Islami dan di akhir komentar <span class="fw-bold">wajib</span> diberikan hashtags <span class="fw-bold">#praktikPrakarya2024</span>
+                                <span class="fw-bold">Praktik 2:</span> Klik <a class="text-success fw-bold text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">link berikut</a>, dan isi form dengan data valid dari KK dan Ijazah terakhir, melalui akun email masing-masing peserta
                                 <br>
-                                <span class="fw-bold">Penting!!</span> Soal bisa berbeda dengan peserta lain, harap sesuai dengan intruksi dan link yang ada.
+                                <span class="fw-bold">Praktik 3:</span> Berikan/tuliskan komentar terhadap 1 postingan dari salah satu media sosial Ma'had Al-Ittihad Al Islami dengan <a href="https://youtu.be/7wJOsGEaz0Y">prinsip INSAN "Internet Sehat dan Aman"</a> dan di akhir komentar <span class="fw-bold">wajib</span> diberikan 2 hashtags <span class="fw-bold">#praktikPrakarya2024 dan <span id="t_token">#12A00007</span></span> (sesuai token masing-masing)
+                                <br> medsos pilihan untuk anda:
+                                <span id="sosial">
+                                    <img src='fb.svg' width='20px'><a class=' text-secondary fw-bold text-decoration-none' target='_blank' href='https://web.facebook.com/mahadalittihadalislami/'> facebook</a>
+                                </span>
+                                <hr>
+                                <span class="fw-bold">Penting!!</span> Soal dan token berbeda dengan peserta lain, harap sesuai dengan intruksi dan link yang ada.
                             </td>
                         </tr>
                     </tbody>
@@ -78,16 +88,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-        async function fetchData() {
+        f_nik = document.getElementById('nik')
+        f_nama = document.getElementById('nama')
+        f_sosial = document.getElementById('sosial')
+        f_token = document.getElementById('token')
+        t_token = document.getElementById('t_token')
+        tabel = document.getElementById('tabel')
+        ket_nik = document.getElementById('ket_nik')
+
+        document.querySelector("input").addEventListener("keypress", function (evt) {
+            if (evt.which < 48 || evt.which > 57)
+            {
+                evt.preventDefault();
+            }
+        });
+
+        async function fetchData(nik) {
             try {
                 // Lakukan permintaan GET menggunakan Axios dengan async/await
-                const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
-                console.log(response.data);
+                const url ='https://opensheet.elk.sh/1pKPekhbDzXQh1APxs3cexeR-xU6UgF3gKI5JgfX_v3I/1'
+                const response = await axios.get(url);
+                // console.log(response.data);
+                hasil = response.data;
+                
+                const filteredData = hasil.filter(function(item) {
+                    return item['no'] == nik; 
+                })
+
+                if (filteredData.length < 1){
+                    ket_nik.innerHTML = 'NIK tidak ditemukan'
+                    return
+                }else{
+                    ket_nik.innerHTML = 'Alhamdulillah, NIK ditemukan'
+
+                    nik_ = filteredData[0]['no']
+                    nama = filteredData[0]['nama']
+                    sosial = filteredData[0]['sosial']
+                    token = filteredData[0]['token']
+                    f_nama.innerHTML = nama
+                    f_token.innerHTML = token
+                    t_token.innerHTML = '#'+token
+                    f_sosial.innerHTML = sosial
+
+                    tabel.classList.remove('d-none')
+                }
             } catch (error) {
                 console.error(error);
             }
         }
-        fetchData()
+        
         document.getElementById('nik').addEventListener('input', function() {
             // Ambil nilai dari input
             var nik = this.value;
@@ -98,14 +147,18 @@
             // Lakukan validasi
             if (regex.test(nik)) {
                 // Jika valid, tambahkan kelas 'is-valid' dan hapus kelas 'is-invalid'
-                console.log('valid')
                 this.classList.add('is-valid');
                 this.classList.remove('is-invalid');
+
+                fetchData(nik)
+
             } else {
                 // Jika tidak valid, tambahkan kelas 'is-invalid' dan hapus kelas 'is-valid'
-                console.log('tidak valid')
                 this.classList.add('is-invalid');
                 this.classList.remove('is-valid');
+                tabel.classList.add('d-none')
+
+                ket_nik.innerHTML = 'Silahkan masukkan nik, sesuai kartu keluarga, sebanyak 16 angka!'
             }
         });
     </script>
