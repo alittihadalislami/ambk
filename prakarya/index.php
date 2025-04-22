@@ -70,7 +70,7 @@
                                 <br>
                                 <span class="fw-bold">Praktik 2:</span> Klik <a class="text-success fw-bold text-decoration-none" href="https://docs.google.com/forms/d/e/1FAIpQLScr8edpb0PevjimTlGzhpaxsylCbJln3D2GyRWKmxHXRP1WbQ/viewform" target="_blank">link berikut</a>, dan isi form dengan data valid dari KK dan Ijazah terakhir, melalui akun Gmail masing-masing peserta
                                 <br>
-                                <span class="fw-bold">Praktik 3:</span> Berikan/tuliskan komentar terhadap 1 postingan dari salah satu media sosial Ma'had Al-Ittihad Al Islami dengan <a href="https://youtu.be/7wJOsGEaz0Y">prinsip INSAN "Internet Sehat dan Aman"</a> dan di akhir komentar <span class="fw-bold">wajib</span> diberikan 2 hashtags <span class="fw-bold">#praktikPrakarya2024 dan <span id="t_token">#12A00007</span></span> (sesuai token masing-masing)
+                                <span class="fw-bold">Praktik 3:</span> Berikan/tuliskan komentar terhadap 1 postingan dari salah satu media sosial Ma'had Al-Ittihad Al Islami dengan <a href="https://youtu.be/7wJOsGEaz0Y">prinsip INSAN "Internet Sehat dan Aman"</a> dan di akhir komentar <span class="fw-bold">wajib</span> diberikan 2 hashtags <span class="fw-bold">#praktikPrakarya2025 dan <span id="t_token">#12A00007</span></span> (sesuai token masing-masing)
                                 <br> medsos pilihan untuk anda:
                                 <span id="sosial">
                                     <img src='fb.svg' width='20px'><a class=' text-secondary fw-bold text-decoration-none' target='_blank' href='https://web.facebook.com/mahadalittihadalislami/'> facebook</a>
